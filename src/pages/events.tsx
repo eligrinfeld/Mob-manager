@@ -23,8 +23,8 @@ export const EventList = () => (
       <DateField source="date" showTime />
       <TextField source="location" />
       <NumberField source="capacity" />
-      <NumberField source="freeEntryLimit" />
-      <NumberField source="coverCharge" />
+      <NumberField source="free_entry_limit" />
+      <NumberField source="cover_charge" />
     </Datagrid>
   </List>
 );
@@ -36,9 +36,9 @@ export const EventEdit = () => (
       <DateTimeInput source="date" />
       <TextInput source="location" />
       <NumberInput source="capacity" />
-      <NumberInput source="freeEntryLimit" />
-      <NumberInput source="coverCharge" />
-      <ReferenceInput source="venueId" reference="venues">
+      <NumberInput source="free_entry_limit" />
+      <NumberInput source="cover_charge" />
+      <ReferenceInput source="venue_id" reference="venues">
         <SelectInput optionText="name" />
       </ReferenceInput>
     </SimpleForm>
@@ -52,9 +52,9 @@ export const EventCreate = () => (
       <DateTimeInput source="date" />
       <TextInput source="location" />
       <NumberInput source="capacity" />
-      <NumberInput source="freeEntryLimit" />
-      <NumberInput source="coverCharge" />
-      <ReferenceInput source="venueId" reference="venues">
+      <NumberInput source="free_entry_limit" />
+      <NumberInput source="cover_charge" />
+      <ReferenceInput source="venue_id" reference="venues">
         <SelectInput optionText="name" />
       </ReferenceInput>
     </SimpleForm>

@@ -1,20 +1,5 @@
 import React from 'react';
-import {
-  List,
-  Datagrid,
-  TextField,
-  EmailField,
-  BooleanField,
-  DateField,
-  NumberField,
-  Edit,
-  Create,
-  SimpleForm,
-  TextInput,
-  BooleanInput,
-  DateInput,
-  NumberInput,
-} from 'react-admin';
+import { List, Datagrid, TextField, Edit, Create, SimpleForm, TextInput, EmailField } from 'react-admin';
 
 export const CustomerList = () => (
   <List>
@@ -23,9 +8,6 @@ export const CustomerList = () => (
       <TextField source="name" />
       <EmailField source="email" />
       <TextField source="phone" />
-      <BooleanField source="isVIP" />
-      <DateField source="dateOfBirth" />
-      <NumberField source="visitCount" />
     </Datagrid>
   </List>
 );
@@ -36,10 +18,6 @@ export const CustomerEdit = () => (
       <TextInput source="name" />
       <TextInput source="email" type="email" />
       <TextInput source="phone" />
-      <BooleanInput source="isVIP" />
-      <DateInput source="dateOfBirth" />
-      <TextInput source="preferences" multiline />
-      <NumberInput source="visitCount" disabled />
     </SimpleForm>
   </Edit>
 );
@@ -50,9 +28,6 @@ export const CustomerCreate = () => (
       <TextInput source="name" />
       <TextInput source="email" type="email" />
       <TextInput source="phone" />
-      <BooleanInput source="isVIP" />
-      <DateInput source="dateOfBirth" />
-      <TextInput source="preferences" multiline />
     </SimpleForm>
   </Create>
 );
